@@ -5,7 +5,7 @@ import os
 from time import sleep
 #random word
 myord=random.choice(mydata.wordlist)
-
+the_word=myord
 
 #print hangman logo
 print(mydata.hangart)
@@ -24,6 +24,7 @@ def spcaes(myspace,stage=6):
   print(mydata.hangman[stage])
   if stage==0:
     print(mydata.gameover)
+    print('The word was: '+the_word)
     fl=input('Enter any key to exit:')
     exit()
       
